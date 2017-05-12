@@ -1,4 +1,4 @@
-# WiiU Title Downloader
+# WiiU Title ID and Ticket Downloader
 Download pretty much all content from wiiu.titlekeys.gq
 * JSON file to setup a mirror from the original site
 * plain text key.txt for daily usage
