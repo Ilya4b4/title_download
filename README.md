@@ -10,5 +10,5 @@ python title_download.py
 ```
 
 ## ToDos
-* add support for 3ds.titlekeys.gq
 * add working parameters to script
+* add suport for download titlekeys.bin, seeddb.bin and so on

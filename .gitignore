@@ -1,3 +1,3 @@
-/tickets/
-keys.txt
-wiiu.json
+/wiiu_tickets/
+keys*.txt
+*.json
