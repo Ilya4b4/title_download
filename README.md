@@ -8,3 +8,7 @@ Download pretty much all content from wiiu.titlekeys.gq
 ```bash
 python title_download.py
 ```
+
+## ToDos
+* add support for 3ds.titlekeys.gq
+* add working parameters to script
