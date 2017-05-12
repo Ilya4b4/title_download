@@ -4,6 +4,6 @@ Download pretty much all content from wiiu.titlekeys.gq
 * plain text key.txt for daily usage
 * $TITLEID.tik files for all availble ticket files
 
-{% highlight bash %}
+```bash
 python title_download.py
-{% endhighlight %}
+```
