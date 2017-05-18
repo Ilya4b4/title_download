@@ -15,7 +15,7 @@ and 3ds.titlekys.gq
 
 ## Usage
 ```bash
-python title:download.py -w -d
+python title:download.py -w -3
 ```
 Downloads everything from both 3ds and wiiu titlekey site
 

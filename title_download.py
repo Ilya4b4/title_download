@@ -22,7 +22,7 @@ def usage():
     print "   --3url URL     specify url for the 3ds titlekey site with http[s] prefix"
     print "   -l, --local    generate key file only. Do not attempt for network connection"
     print "examples: "
-    print "   %s -w -d" % script_name
+    print "   %s -w -3" % script_name
     print "   Downloads everything from both 3ds and wiiu titlekey site\n"
     print "   %s -3 --3url \"http://example.site\"" % script_name
     print "   Downloads everything from 3ds titlekey site with a custom url\n"
