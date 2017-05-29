@@ -26,7 +26,7 @@ def usage():
     print "   Downloads everything from both 3ds and wiiu titlekey site\n"
     print "   %s -3 --3url \"http://example.site\"" % script_name
     print "   Downloads everything from 3ds titlekey site with a custom url\n"
-    print "   %s -w -3 --wurl \"http://example.site\" --3url \"http://3ds.example.site\""
+    print "   %s -w -3 --wurl \"http://example.site\" --3url \"http://3ds.example.site\"" % script_name
     print "   Downloads everything from bot 3ds and wiiu titlkey site with custom urls"
     print "   for both arguments\n"
     print "   %s -3 -w --local" % script_name
