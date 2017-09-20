@@ -25,9 +25,9 @@ def usage():
     print "   %s -w -3" % script_name
     print "   Downloads everything from both 3ds and wiiu titlekey site\n"
     print "   %s -3 --3url \"http://example.site\"" % script_name
-    print "   Downloads everything from 3ds titlekey site with a custom url\n"
+    print "   Downloads everything from 3ds titlekey site with a custom url for the 3ds titlekeys\n"
     print "   %s -w -3 --wurl \"http://example.site\" --3url \"http://3ds.example.site\"" % script_name
-    print "   Downloads everything from bot 3ds and wiiu titlkey site with custom urls"
+    print "   Downloads everything from both 3ds and wiiu titlkey sites with custom urls"
     print "   for both arguments\n"
     print "   %s -3 -w --local" % script_name
     print "   Only converts the local \"wiiu.json\" and \"3ds.json\" file into human"

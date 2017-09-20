@@ -1,7 +1,7 @@
 # WiiU/3DS Title ID,Keys and Ticket Downloader
 Download pretty much all content from both wiiu.titlekeys.gq
 and 3ds.titlekys.gq
-* JSON file to setup a mirror from the original site
+* JSON file to parse and setup a mirror from the original site
 * plain text key.txt for daily usage
 * $TITLEID.tik files for all availble wiiu ticket files
 * decrypted and encrypted 3ds ticket files for use with freeshop etc
@@ -22,12 +22,12 @@ Downloads everything from both 3ds and wiiu titlekey site
 ```bash
 python title_download.py -3 --3url "http://example.site"
 ```
-Downloads everything from 3ds titlekey site with a custom url
+Downloads everything from 3ds titlekey site with a custom url for the 3ds titlekeys
 
 ```bash
 python title_download.py -w -3 --wurl "http://example.site" --3url "http://3ds.example.site"
 ```
-Downloads everything from bot 3ds and wiiu titlkey site with custom urls
+Downloads everything from both 3ds and wiiu titlekey sites with custom urls
 for both arguments
 
 ```bash
