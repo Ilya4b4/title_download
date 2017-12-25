@@ -1,6 +1,6 @@
 # WiiU/3DS Title ID,Keys and Ticket Downloader
 Download pretty much all content from both wiiu.titlekeys.gq
-and 3ds.titlekys.gq
+and 3ds.titlekeys.gq
 * JSON file to parse and setup a mirror from the original site
 * plain text key.txt for daily usage
 * $TITLEID.tik files for all availble wiiu ticket files
