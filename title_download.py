@@ -8,13 +8,13 @@ import getopt
 #download URLs
 url_wiiu = 'http://wiiu.titlekeys.gq'
 url_3ds = 'http://3ds.titlekeys.gq'
-script_name = "titlekey_download.py"
-use_3ds = "no"
-use_wiiu = "no"
-local_only = "no"
+script_name = os.path.basename(__file__)
+use_3ds = False
+use_wiiu = False
+local_only = False
 
 def usage():
-    print "usage: titlekey_download.py [OPTIONS]"
+    print "usage: %s [OPTIONS]" % script_name
     print "Arguments: "
     print "   -w, --wiiu     download everything from wiiu site"
     print "   -3, --3ds      download everything from 3ds site"
@@ -163,11 +163,11 @@ for opt, arg in opts:
         usage()
         sys.exit(2)
     elif opt in ('-w', '--wiiu'):
-        use_wiiu = "yes"
+        use_wiiu = True
     elif opt in ('-3', '--3ds'):
-        use_3ds = "yes"
+        use_3ds = True
     elif opt in ('-l', '--local'):
-        local_only = "yes"
+        local_only = True
     elif opt in ('--wurl'):
         url_wiiu = arg
     elif opt in ('--3url'):
@@ -177,14 +177,14 @@ for opt, arg in opts:
         usage()
         sys.exit(2)
 
-if (use_wiiu == "no" and use_3ds == "no"):
+if not use_wiiu and not use_3ds:
     print "No arguments given. Please use at least -w or -3\n"
     usage()
     sys.exit(2)
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-if use_3ds == "yes":
-    if local_only == "no":
+if use_3ds:
+    if not local_only:
         bin_dir = os.path.join(script_dir, '3ds_files')
         try:
             os.makedirs(bin_dir)
@@ -200,8 +200,8 @@ if use_3ds == "yes":
         parsed_3ds = json.load(json_file)
     json_file.close()
     generate_keyfile(parsed_3ds, "3ds")
-if use_wiiu == "yes":
-    if local_only == "no":
+if use_wiiu:
+    if not local_only:
         ticket_dir = os.path.join(script_dir, 'wiiu_tickets')
         try:
             os.makedirs(ticket_dir)
